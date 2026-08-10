@@ -32,3 +32,5 @@ The portfolio is split into dedicated, lightweight subpages for seamless navigat
 - **Interactive Project Cards:** Hover mechanics highlighting repository links and technology stacks.
 
 ---
+
+Website is live at sebastijanpecenko.com
