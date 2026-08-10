@@ -113,6 +113,20 @@ header {
   color: #A855F7;
 }
 
+/* Utripajoča črtica na koncu typewriter naslova */
+.hero-title::after {
+  content: '|';
+  margin-left: 5px;
+  color: #A855F7; /* Tvoja vijolična barva */
+  animation: blink 0.7s infinite;
+}
+
+/* Animacija za utripanje črtice */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
 .heros-title {
   font-size: 3.5rem;
   line-height: 1.05;
