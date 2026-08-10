@@ -23,19 +23,64 @@
   </header>
 
   <!-- Glavna vsebina (Hero section) -->
-  <main class="hero">
-    <div class="hero-content">
-      <h1 class="hero-title">Hi, I'm Sebastijan</h1>
-      <p class="hero-description">
-        Computer science student from Slovenia passionate about software development, 
-        web technologies, and problem solving. I build projects with Java, HTML, CSS, and databases while exploring new technologies and improving every day.
-      </p>
-      <div class="cta-buttons">
-        <a href="#projects" class="btn btn-primary">See my projects</a>
-        <a href="#about" class="btn btn-secondary">Who am I?</a>
+  <main class="heros">
+  <div class="heros-content">
+    <h1 class="heros-title">Get in Touch</h1>
+    <p class="heros-description">
+      Whether you have a question, a project idea, or just want to say hi, feel free to drop a message below or reach out directly!
+    </p>
+
+    <div class="contact-container">
+      <!-- Obrazec za pošiljanje -->
+      <!-- Opomba: Z uporabo Formspree (brezplačno) lahko sporočila dobiš naravnost na svoj email -->
+      <form action="https://formspree.io/f/tvoj-form-id" method="POST" class="contact-form">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your Name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Your message here..." required></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+      </form>
+
+      <!-- Hitre direktne povezave -->
+      <div class="contact-info">
+        <div class="info-item">
+          <i class="fa-solid fa-envelope info-icon"></i>
+          <div>
+            <h3>Email</h3>
+            <a href="mailto:pecenkosebastijan@gmail.com">pecenkosebastijan@gmail.com</a>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <i class="fa-brands fa-github info-icon"></i>
+          <div>
+            <h3>GitHub</h3>
+            <a href="https://github.com/SebastijanPecenko" target="_blank" rel="noopener noreferrer">github.com/SebastijanPecenko</a>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <i class="fa-solid fa-location-dot info-icon"></i>
+          <div>
+            <h3>Location</h3>
+            <p>Slovenia</p>
+          </div>
+        </div>
       </div>
     </div>
-  </main>
+  </div>
+</main>
 
   <!-- Noga (Footer) -->
   <footer>
