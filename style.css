@@ -6,8 +6,8 @@
 }
 
 body {
-  background-color: #0D0B14; /* Temno sivo ozadje */
-  color: #F1F5F9;            /* Svetlo besedilo */
+  background-color: #0D0B14;
+  color: #F1F5F9;
   font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   min-height: 100vh;
   display: flex;
@@ -19,7 +19,7 @@ header {
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 
-/* Navigacija */
+/* Navigation */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -28,13 +28,12 @@ header {
   max-width: 1200px;
   margin: 0 auto;
   width: 100%;
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
 
 .logo {
-  color: #A855F7; /* Bright neon green */
-  font-size: 1.25rem;
-  font-weight: 700;
-  text-decoration: none;
+  height: 48px;
 }
 
 .nav-links {
@@ -55,7 +54,7 @@ header {
   opacity: 0.8;
 }
 
-/* Hero razdelek */
+/* Main text */
 .hero {
   flex: 1;
   display: flex;
@@ -80,6 +79,7 @@ header {
   font-weight: 700;
   margin-bottom: 1.5rem;
   color: #A855F7;
+  font-size: clamp(3.8rem, 5vw, 3.5rem);
 }
 
 
@@ -113,20 +113,6 @@ header {
   color: #A855F7;
 }
 
-/* Utripajoča črtica na koncu typewriter naslova */
-.hero-title::after {
-  content: '|';
-  margin-left: 5px;
-  color: #A855F7; /* Tvoja vijolična barva */
-  animation: blink 0.7s infinite;
-}
-
-/* Animacija za utripanje črtice */
-@keyframes blink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0; }
-}
-
 .heros-title {
   font-size: 3.5rem;
   line-height: 1.05;
@@ -143,6 +129,19 @@ header {
   max-width: 850px;
 }
 
+/* Animation */
+.hero-title::after {
+  content: '|';
+  margin-left: 5px;
+  color: #A855F7;
+  animation: blink 0.7s infinite;
+}
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/*Sklls logos*/
 .skill-badge {
   font-size: 20px;
 }
@@ -151,7 +150,7 @@ header {
   margin-bottom: 0.5rem;
 }
 
-/* Gumbi */
+/* Buttons */
 .cta-buttons {
   display: flex;
   gap: 1rem;
@@ -187,7 +186,7 @@ header {
   background-color: white;
 }
 
-/* Noga (Footer) */
+/* Footer */
 footer {
   text-align: center;
   padding: 0.9rem 1rem;
@@ -208,19 +207,16 @@ footer {
 }
 
 .social-icons a:hover {
-  color: #00e676;
+  color: #A855F7;
 }
 
 .footer-text {
-  color: #a0aec0;
+  color: #A855F7;
   font-size: 0.8rem;
 }
 
-.heart {
-  color: #ff4d4d;
-}
 
-/* Kontejner in postavitev */
+/* Contact */
 .contact-container {
   display: flex;
   flex-wrap: wrap;
@@ -228,7 +224,6 @@ footer {
   margin-top: 2rem;
 }
 
-/* Obrazec in polja */
 .contact-form {
   flex: 1 1 300px;
   display: flex;
@@ -252,7 +247,6 @@ footer {
   outline: none;
 }
 
-/* Gumb */
 .submit-btn {
   background: #A855F7;
   color: #fff;
@@ -267,7 +261,7 @@ footer {
   background: #9333ea;
 }
 
-/* Kartice ob strani */
+/* Side Cards */
 .contact-info {
   flex: 1 1 200px;
   display: flex;
@@ -295,34 +289,33 @@ footer {
   text-decoration: none;
 }
 
-/* Mreža za projekte */
+/* Projects */
 .projects-grid {
   display: flex;
-  flex-wrap: wrap; /* Omogoči prelom v novo vrstico */
-  gap: 1.5rem; /* Razmik med karticami */
+  flex-wrap: wrap;
+  gap: 1.5rem;
   margin-top: 2rem;
 }
 
-/* Posamezna kartica */
+/* Card */
 .project-card {
-  flex: 1 1 280px; /* Širina kartice: najmanj 280px, sicer pa se raztegne */
-  background: rgba(255, 255, 255, 0.05); /* Prosojno belo ozadje */
-  border: 1px solid rgba(255, 255, 255, 0.1); /* Rahel rob */
-  border-radius: 10px; /* Zaobljeni robovi */
+  flex: 1 1 280px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
   padding: 1.5rem;
 }
 
-/* Zgornji del kartice (ikone) */
 .project-header {
   display: flex;
-  justify-content: space-between; /* Ikono mapice da na levo, GitHub pa na desno */
+  justify-content: space-between;
   align-items: center;
   margin-bottom: 1rem;
 }
 
 .project-folder-icon {
   font-size: 1.8rem;
-  color: #A855F7; /* Tvoja vijolična barva */
+  color: #A855F7;
 }
 
 .project-github-link {
@@ -330,7 +323,6 @@ footer {
   font-size: 1.4rem;
 }
 
-/* Besedilo znotraj kartice */
 .project-title {
   font-size: 1.2rem;
   color: #ffffff;
@@ -340,11 +332,10 @@ footer {
 .project-description {
   font-size: 0.95rem;
   color: #e2e8f0;
-  line-height: 1.5; /* Razmik med vrsticami besedila */
+  line-height: 1.5;
   margin-bottom: 1.5rem;
 }
 
-/* Oznake za tehnologije na dnu */
 .project-tags {
   display: flex;
   flex-wrap: wrap;
