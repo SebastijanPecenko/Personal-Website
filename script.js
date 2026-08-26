@@ -9,3 +9,21 @@ function typeWriter() {
   }
 }
 window.addEventListener("DOMContentLoaded", typeWriter);
+
+
+const menuToggle = document.getElementById("menu-toggle");
+const navLinks = document.getElementById("nav-links");
+menuToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+    menuToggle.classList.toggle("active");
+});
+
+document.addEventListener("click", (event) => {
+    if (
+        !navLinks.contains(event.target) &&
+        !menuToggle.contains(event.target)
+    ) {
+        navLinks.classList.remove("active");
+        menuToggle.classList.remove("active");
+    }
+});
