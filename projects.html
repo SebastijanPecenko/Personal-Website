@@ -24,7 +24,12 @@
         <a href="index.html" class="logo">
           <img src="https://sebastijanpecenko.com/images/logo.png" alt="Sebastijan Pečenko Logo">
         </a>
-      <ul class="nav-links">
+        <button class="menu-toggle" id="menu-toggle" aria-label="Open menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      <ul class="nav-links" id="nav-links">
         <li><a href="about.html">About me</a></li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="contact.html">Contact</a></li>
@@ -40,57 +45,64 @@
     </p>
 
     <div class="projects-grid">
-      <div class="project-card">
-        <div class="project-header">
-          <i class="fa-solid fa-folder-open project-folder-icon"></i>
-          <a href="https://github.com/SebastijanPecenko/Surviving_In_Underground.git" target="_blank" rel="noopener noreferrer" class="project-github-link">
-            <i class="fa-brands fa-github"></i>
-          </a>
-        </div>
+      <a href="https://github.com/SebastijanPecenko/Surviving_In_Underground"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="project-card">
+        <img
+            src="images/surviving_in_underground.png"
+            class="project-image"
+        >
         <h3 class="project-title">Surviving In Underground</h3>
         <p class="project-description">
-          A 2D Java Swing arcade survival game where players collect gems, avoid obstacles, defeat enemies, and survive as long as possible.
+            A 2D Java Swing arcade survival game where players collect gems,
+            avoid obstacles, defeat enemies, and survive as long as possible.
         </p>
         <div class="project-tags">
-          <span>Java</span>
-          <span>Swing / JavaFX</span>
+            <span>Java</span>
+            <span>Swing / JavaFX</span>
         </div>
-      </div>
+      </a>
 
-      <div class="project-card">
-        <div class="project-header">
-          <i class="fa-solid fa-folder-open project-folder-icon"></i>
-          <a href="https://github.com/SebastijanPecenko/Mines-Game-Simulator.git" target="_blank" rel="noopener noreferrer" class="project-github-link">
-            <i class="fa-brands fa-github"></i>
-          </a>
-        </div>
+      <a href="https://github.com/SebastijanPecenko/Mines-Game-Simulator"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="project-card">
+        <img
+            src="images/mines_game_simulator.png"
+            class="project-image"
+        >
         <h3 class="project-title">Mines Game Simulator</h3>
         <p class="project-description">
-          A Java Swing desktop simulation of the popular Mines gambling game built in NetBeans.
+            A Java Swing desktop simulation of the popular Mines gambling game built in NetBeans.
         </p>
         <div class="project-tags">
-          <span>Java</span>
-          <span>Swing / JavaFX</span>
+            <span>Java</span>
+            <span>Swing / JavaFX</span>
         </div>
-      </div>
+      </a>
 
-      <div class="project-card">
-        <div class="project-header">
-          <i class="fa-solid fa-folder-open project-folder-icon"></i>
-          <a href="https://github.com/SebastijanPecenko/Personal-Website.git" target="_blank" rel="noopener noreferrer" class="project-github-link">
-            <i class="fa-brands fa-github"></i>
-          </a>
-        </div>
-        <h3 class="project-title">Personal Website</h3>
+      <a href="https://github.com/SebastijanPecenko/Personal-Website"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="project-card">
+        <img
+            src="images/personal_website.png"
+            alt="Surviving In Underground project"
+            class="project-image"
+        >
+        <h3 class="project-title">
+            Personal Website
+        </h3>
         <p class="project-description">
-          A modern, minimalist personal portfolio website built with a clean aesthetic, dark theme, and glassmorphism elements.
+            A modern, minimalist personal portfolio website built with a clean aesthetic, dark theme, and glassmorphism elements.
         </p>
         <div class="project-tags">
-          <span>HTML</span>
-          <span>CSS</span>
-          <span>JavaScript</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
         </div>
-      </div>
+      </a>
     </div>
   </div>
 </main>
@@ -108,5 +120,6 @@
       &#169; 2026, Sebastijan Pečenko.
     </p>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
