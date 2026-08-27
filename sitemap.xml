@@ -16,4 +16,8 @@
     <loc>https://sebastijanpecenko.com/contact.html</loc>
     <priority>0.80</priority>
   </url>
+  <url>
+    <loc>https://sebastijanpecenko.com/skills.html</loc>
+    <priority>0.80</priority>
+  </url>
 </urlset>
