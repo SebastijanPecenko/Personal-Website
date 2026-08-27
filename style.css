@@ -310,21 +310,25 @@ footer {
   text-decoration: none;
 }
 
-/* Projects */
 .projects-grid {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
   margin-top: 2rem;
 }
 
-/* Card */
 .project-card {
-  flex: 1 1 280px;
+  display: block;
+  width: 100%;
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 10px;
   padding: 1.5rem;
+
+  text-decoration: none;
+  color: inherit;
+
+  transition: transform 0.2s ease, border-color 0.2s ease;
 }
 
 .project-header {
@@ -417,19 +421,6 @@ footer {
     }
 }
 
-.project-card {
-    flex: 1 1 280px;
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-    padding: 1.5rem;
-
-    text-decoration: none;
-    color: inherit;
-
-    transition: transform 0.2s ease, border-color 0.2s ease;
-}
-
 .project-card:hover {
     transform: translateY(-5px);
     border-color: #A855F7;
@@ -519,4 +510,20 @@ footer {
   .skill-card {
     padding: 1.25rem;
   }
+}
+
+@media (max-width: 900px) {
+
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
 }
