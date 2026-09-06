@@ -128,8 +128,8 @@ header {
   font-size: 2rem;
   line-height: 1.05;
   font-weight: 700;
-  margin-bottom: 1.5rem;
-  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  margin-top: 1.5rem;
   color: #A855F7;
 }
 
@@ -137,7 +137,7 @@ header {
   font-size: 3.5rem;
   line-height: 1.05;
   font-weight: 700;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.5rem;
   color: #A855F7;
 }
 
@@ -526,4 +526,170 @@ footer {
     grid-template-columns: 1fr;
   }
 
+}
+
+/* Stili za kartice izkušenj in izobraževanja */
+
+.info-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.25rem;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.info-card:hover {
+  border-color: #A855F7;
+  transform: translateY(-2px);
+}
+
+.card-top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+}
+
+.card-main-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.card-date {
+  font-size: 0.85rem;
+  color: #94a3b8;
+  white-space: nowrap;
+}
+
+.card-subtitle {
+  font-size: 0.95rem;
+  color: #cbd5e1;
+  margin-top: 0.2rem;
+}
+
+.card-company {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #A855F7; /* Tvoja vijolična barva namesto zelene */
+  margin-top: 0.25rem;
+}
+
+.card-location {
+  font-size: 0.85rem;
+  color: #94a3b8;
+  margin-top: 0.2rem;
+  margin-bottom: 0.75rem;
+}
+
+.card-details {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #e2e8f0;
+}
+
+/* Mobilna prilagoditev za datume */
+@media (max-width: 500px) {
+  .card-top-row {
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+  
+  .card-date {
+    margin-bottom: 0.3rem;
+  }
+}
+
+/* Stil za več datumskih obdobij znotraj ene kartice */
+.dates-list {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 0.8rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+}
+
+.dates-list li {
+  font-size: 0.85rem;
+  color: #94a3b8;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+}
+
+.dates-list li i {
+  color: #A855F7; /* Tvoja vijolična barva za ikono koledarja */
+}
+
+/* Now Sekcija */
+
+
+.now-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.now-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 1.05rem;
+  color: #ffffff;
+}
+
+/* Interests Sekcija (Mreža 3x2) */
+.interests-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  justify-content: center; /* Centers items horizontally */
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.interest-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+  padding: 0.85rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.interest-card:hover {
+  border-color: #A855F7;
+  transform: translateY(-2px);
+}
+
+.interest-icon {
+  font-size: 1.2rem;
+}
+
+.interest-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+/* Odzivnost za manjše zaslone */
+@media (max-width: 768px) {
+  .interests-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .interests-grid {
+    grid-template-columns: 1fr;
+  }
 }
